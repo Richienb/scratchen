@@ -12,8 +12,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14
-      - run: git config user.name "Richienb Bot"
-      - run: git config user.email "64409073+Richienb-bot@users.noreply.github.com"
+      - run: git config --global user.name "Richienb Bot"
+      - run: git config --global user.email "64409073+Richienb-bot@users.noreply.github.com"
       - run: sh ./build.sh
       - uses: JamesIves/github-pages-deploy-action@3.5.9
         with:
