@@ -11,6 +11,7 @@ git am ../patches/*.patch
 # Build
 npm install
 BUILD_MODE=dist npm run build
+rm -rf ../dist
 mv build ../dist
 
 cd ..
