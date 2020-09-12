@@ -10,7 +10,7 @@ git am ../patches/*.patch
 
 # Build
 npm install
-npm run build
+BUILD_MODE=dist npm run build
 mv build ../dist
 
 cd ..
