@@ -14,7 +14,7 @@ jobs:
           node-version: 14
       - run: git config user.name "Richienb Bot"
       - run: git config user.email "64409073+Richienb-bot@users.noreply.github.com"
-      - run: ./build.sh
+      - run: sh ./build.sh
       - uses: JamesIves/github-pages-deploy-action@3.5.9
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
