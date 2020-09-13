@@ -1,6 +1,6 @@
-From c06d498034e54b288f6944953b350b4b77aa6fbd Mon Sep 17 00:00:00 2001
+From e30e4e3a12e13777dae4e0fb12ea3a20221fab92 Mon Sep 17 00:00:00 2001
 From: Richie Bendall <richiebendall@gmail.com>
-Date: Sun, 13 Sep 2020 04:03:56 +1200
+Date: Sun, 13 Sep 2020 17:47:01 +1200
 Subject: [PATCH 1/1] Add support for loading custom extensions
 
 Signed-off-by: Richie Bendall <richiebendall@gmail.com>
@@ -320,7 +320,7 @@ literal 0
 HcmV?d00001
 
 diff --git a/src/lib/libraries/extensions/index.jsx b/src/lib/libraries/extensions/index.jsx
-index ba18b916b..9d1f879e6 100644
+index ba18b916b..d0042de2c 100644
 --- a/src/lib/libraries/extensions/index.jsx
 +++ b/src/lib/libraries/extensions/index.jsx
 @@ -46,7 +46,29 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
@@ -343,7 +343,7 @@ index ba18b916b..9d1f879e6 100644
 +        insetIconURL: customInsetImage,
 +        description: (
 +            <FormattedMessage
-+                defaultMessage="For developers"
++                defaultMessage="Load an extension from a URL"
 +                description="Description for the custom extension selector"
 +                id="gui.extension.custom.description"
 +            />
