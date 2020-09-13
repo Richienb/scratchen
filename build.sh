@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Clone repository
-git clone https://github.com/LLK/scratch-gui.git --branch develop --single-branch
+git clone https://github.com/LLK/scratch-gui.git --single-branch --depth 1
 
 cd scratch-gui
 
