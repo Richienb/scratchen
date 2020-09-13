@@ -9,7 +9,7 @@ cd scratch-gui
 git am ../patches/*.patch
 
 # Build
-npm install
+npm ci --prefer-offline --no-audit
 BUILD_MODE=dist npm run build
 rm -rf ../dist
 mv build ../dist
