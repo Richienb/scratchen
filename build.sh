@@ -5,6 +5,9 @@ git clone https://github.com/LLK/scratch-gui.git --single-branch --depth 1
 
 cd scratch-gui
 
+# Switch to latest stable version
+git checkout $(git describe --tags --match 'scratch-desktop-v*')
+
 # Apply patches
 git am ../patches/*.patch
 
