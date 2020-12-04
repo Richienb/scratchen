@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# Clone repository
-git clone https://github.com/LLK/scratch-gui.git --single-branch --depth 1
+# Clone repository at the latest stable version
+git clone --single-branch --depth 1 --branch $(git ls-remote --tags --exit-code --refs "https://github.com/LLK/scratch-gui.git" --match "scratch-desktop-v*" | sed -E 's/^[[:xdigit:]]+[[:space:]]+refs\/tags\/(.+)/\1/g' | sort -V | tail -n1) https://github.com/LLK/scratch-gui.git
 
 cd scratch-gui
 
